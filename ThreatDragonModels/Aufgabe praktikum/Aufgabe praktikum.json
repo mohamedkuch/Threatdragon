@@ -78,16 +78,28 @@
               "angle": 0,
               "id": "bfff9a83-6274-4913-a854-ea893ddbb6df",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "DDOS",
+                  "type": "Denial of service",
+                  "description": "Many requests to login in short period of time",
+                  "threatId": "dd3e4f29-ca49-4324-acd9-fe0d1d01e381",
+                  "mitigation": "Add load balancer => Low"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Login System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -108,6 +120,10 @@
                 {
                   "x": 330,
                   "y": 180
+                },
+                {
+                  "x": 380,
+                  "y": 190
                 }
               ],
               "id": "3ba06414-d15d-4e5e-9140-f6c87d9ee481",
@@ -127,13 +143,25 @@
                 }
               ],
               "z": 4,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "title": "False identity",
+                  "type": "Spoofing",
+                  "description": "User can pretend to be someone else and use another person's number",
+                  "threatId": "4db6c597-647d-44d8-9958-b568cb6eae71",
+                  "mitigation": "Add confirmation message to be received when login with number (Low)"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -201,22 +229,34 @@
                 "height": 80
               },
               "position": {
-                "x": 660,
+                "x": 670,
                 "y": 230
               },
               "angle": 0,
               "id": "c36a24de-1a3a-458a-88d2-831f58b01277",
               "z": 6,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Denial of service",
+                  "title": "DDOS Attack",
+                  "description": "The system can be attacked with many requests at a short periode of time",
+                  "threatId": "f56beb2e-6146-44b3-8454-255437bd7560",
+                  "mitigation": "Add Load Balancer (Low)"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "2 Factor Auth Dienst"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -248,13 +288,24 @@
                 }
               ],
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "description": "SQL injection attack to get authenticated",
+                  "title": "Spoofing Attack",
+                  "threatId": "f40554dc-4d43-464a-b258-48773f972807"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -271,16 +322,28 @@
               "angle": 0,
               "id": "8cd6d4f7-060f-4ef6-bef3-0add85cc5902",
               "z": 8,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "description": "User that have access to database can get confidential informations about company",
+                  "title": "Information Disclosure Attack",
+                  "threatId": "f7e12bf3-c4a8-4465-bbeb-738f16b07557",
+                  "mitigation": "Encrypt the data saved in the database (Low)"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Datenbank"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -535,7 +598,7 @@
               "vertices": [
                 {
                   "x": 890,
-                  "y": 260
+                  "y": 290
                 }
               ],
               "id": "e8124a2a-cd46-41b3-8256-df43c7e3ea4f",
@@ -552,13 +615,24 @@
                 }
               ],
               "z": 15,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "description": "Certain users can use certain numbers to get access to certain informations",
+                  "title": "EOP Attack",
+                  "threatId": "9c1f4930-b5d7-4ddb-b8ba-a7a212bda3fc"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -1003,17 +1077,28 @@
               "angle": 0,
               "id": "1375f021-0951-4114-b5fe-d52ad26d5685",
               "z": 31,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "description": "Überwachung",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "description": "When user get access to monitoring system , he can gett confidential data of the auth system and OTT services",
+                  "title": "ID Attack",
+                  "threatId": "718bcbd8-a47d-4560-bbb9-4077a5fa1f22"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "SIEM-System"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1126,13 +1211,24 @@
                 }
               ],
               "z": 34,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "modelType": "STRIDE",
+                  "title": "Tampering Attack",
+                  "type": "Tampering",
+                  "description": "The algorithm used to generate the token can be modified to harm the system or to generate false OTT tokens",
+                  "threatId": "0d7937b6-dcf1-4bde-9931-748e9a455ea0"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -1149,16 +1245,28 @@
               "angle": 0,
               "id": "a994d6e6-008d-4144-bd10-5e55f502a0ca",
               "z": 35,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "modelType": "STRIDE",
+                  "type": "Repudiation",
+                  "title": "RP Attack",
+                  "description": "A user who can get the access to a manager PC , can copy / remove or modify the reports file",
+                  "threatId": "d6f5a08e-70ed-48f8-bfbe-291c14e672d2",
+                  "mitigation": "Inform working managers and users to secure their laptop and not to leave it open in working places (Low)"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Management\nReport"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1175,7 +1283,12 @@
               "target": {
                 "id": "a994d6e6-008d-4144-bd10-5e55f502a0ca"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 700,
+                  "y": 100
+                }
+              ],
               "id": "2657320c-bd56-4206-ad60-232a5e64aa8b",
               "labels": [
                 {
@@ -1190,13 +1303,25 @@
                 }
               ],
               "z": 36,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "description": "The export function can be modified to change the data when exporting it",
+                  "title": "ID Attack",
+                  "threatId": "f95be3c0-e44e-4bcb-93d0-7b2c87a182ea",
+                  "mitigation": "Automate the export of data to be executed seperatly (Low)"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             }
