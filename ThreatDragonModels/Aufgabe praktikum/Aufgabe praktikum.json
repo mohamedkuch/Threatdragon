@@ -158,8 +158,12 @@
                   "y": 168
                 },
                 {
-                  "x": 763,
-                  "y": 91
+                  "x": 699,
+                  "y": 12
+                },
+                {
+                  "x": 867,
+                  "y": 90
                 },
                 {
                   "x": 861,
@@ -224,7 +228,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 6",
+                      "text": "Auth",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -241,12 +245,115 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 630,
+                "y": 60
+              },
+              "angle": 0,
+              "id": "8cd6d4f7-060f-4ef6-bef3-0add85cc5902",
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Datenbank"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "8cd6d4f7-060f-4ef6-bef3-0add85cc5902"
+              },
+              "target": {
+                "id": "c36a24de-1a3a-458a-88d2-831f58b01277"
+              },
+              "vertices": [],
+              "id": "4b9ac311-92fc-4d70-99a2-f0091aa3f14e",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 760,
+                "y": 200
+              },
+              "target": {
+                "id": "8cd6d4f7-060f-4ef6-bef3-0add85cc5902"
+              },
+              "vertices": [],
+              "id": "7fda3759-5d67-44bb-aee7-7d4714509b74",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             }
           ]
         },
         "size": {
           "height": 590,
-          "width": 871
+          "width": 877
         }
       }
     ],
