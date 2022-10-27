@@ -147,7 +147,7 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Low",
+                  "severity": "Medium",
                   "modelType": "STRIDE",
                   "title": "False identity",
                   "type": "Spoofing",
@@ -326,7 +326,7 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
                   "description": "User that have access to database can get confidential informations about company",
