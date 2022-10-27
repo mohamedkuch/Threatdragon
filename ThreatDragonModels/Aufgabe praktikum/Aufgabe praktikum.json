@@ -11,7 +11,243 @@
         "title": "Auf1",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "diagramType": "STRIDE",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 86,
+                "y": 67
+              },
+              "angle": 0,
+              "id": "f424a8c5-e91c-4e11-868a-7037e3a08491",
+              "z": 1,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 40,
+                "y": 148
+              },
+              "target": {
+                "x": 369,
+                "y": 13
+              },
+              "vertices": [
+                {
+                  "x": 243,
+                  "y": 204
+                }
+              ],
+              "id": "665d396a-d190-4a2a-9595-853754b31fd1",
+              "z": 2,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 398,
+                "y": 210
+              },
+              "angle": 0,
+              "id": "bfff9a83-6274-4913-a854-ea893ddbb6df",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Login System"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "f424a8c5-e91c-4e11-868a-7037e3a08491"
+              },
+              "target": {
+                "id": "bfff9a83-6274-4913-a854-ea893ddbb6df"
+              },
+              "vertices": [
+                {
+                  "x": 294,
+                  "y": 223
+                }
+              ],
+              "id": "3ba06414-d15d-4e5e-9140-f6c87d9ee481",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.48905030947005323,
+                    "offset": 0.44707066576262955
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "x": 409,
+                "y": 372
+              },
+              "target": {
+                "x": 409,
+                "y": 370
+              },
+              "vertices": [
+                {
+                  "x": 377,
+                  "y": 168
+                },
+                {
+                  "x": 763,
+                  "y": 91
+                },
+                {
+                  "x": 861,
+                  "y": 294
+                },
+                {
+                  "x": 798,
+                  "y": 482
+                },
+                {
+                  "x": 510,
+                  "y": 474
+                }
+              ],
+              "id": "fb172ea4-a385-471b-aac1-2f7b2060eaac",
+              "z": 5,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 622,
+                "y": 206
+              },
+              "angle": 0,
+              "id": "c36a24de-1a3a-458a-88d2-831f58b01277",
+              "z": 6,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "2 Factor Auth Dienst"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "size": {
+                "width": 10,
+                "height": 10
+              },
+              "smooth": true,
+              "source": {
+                "id": "bfff9a83-6274-4913-a854-ea893ddbb6df"
+              },
+              "target": {
+                "id": "c36a24de-1a3a-458a-88d2-831f58b01277"
+              },
+              "vertices": [],
+              "id": "51b0eb30-df02-49fb-a434-3b2534cbf0bc",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "flow 6",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 871
+        }
       }
     ],
     "reviewer": "Mohamed & Mert"
