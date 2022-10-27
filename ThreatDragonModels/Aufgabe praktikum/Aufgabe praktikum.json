@@ -624,7 +624,8 @@
                   "type": "Elevation of privilege",
                   "description": "Certain users can use certain numbers to get access to certain informations",
                   "title": "EOP Attack",
-                  "threatId": "9c1f4930-b5d7-4ddb-b8ba-a7a212bda3fc"
+                  "threatId": "9c1f4930-b5d7-4ddb-b8ba-a7a212bda3fc",
+                  "mitigation": "Add verification process to check the users authority (Permission System) => Low"
                 }
               ],
               "attrs": {
@@ -1085,9 +1086,10 @@
                   "severity": "High",
                   "modelType": "STRIDE",
                   "type": "Information disclosure",
-                  "description": "When user get access to monitoring system , he can gett confidential data of the auth system and OTT services",
+                  "description": "When user get access to monitoring system , he can get confidential data of the auth system and OTT services",
                   "title": "ID Attack",
-                  "threatId": "718bcbd8-a47d-4560-bbb9-4077a5fa1f22"
+                  "threatId": "718bcbd8-a47d-4560-bbb9-4077a5fa1f22",
+                  "mitigation": "Monitor system only available for only admins with certain whitelisted IPs (Low)"
                 }
               ],
               "attrs": {
@@ -1220,7 +1222,8 @@
                   "title": "Tampering Attack",
                   "type": "Tampering",
                   "description": "The algorithm used to generate the token can be modified to harm the system or to generate false OTT tokens",
-                  "threatId": "0d7937b6-dcf1-4bde-9931-748e9a455ea0"
+                  "threatId": "0d7937b6-dcf1-4bde-9931-748e9a455ea0",
+                  "mitigation": "Add checksum to the algorithm to make sure that the result token hasn't been modified or altered (Medium)"
                 }
               ],
               "attrs": {
